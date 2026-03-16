@@ -1,0 +1,64 @@
+# About Dataset
+
+The columns provide information on various nutrients, including energy, protein, fat, carbohydrates, fiber, sugar, calcium, iron, magnesium, phosphorus, potassium, sodium, zinc, and copper.
+
+# Columns
+## NDB_No
+Unique National Nutrient Database Number (Integer)
+
+## Descrip
+Description of the food (String)
+
+## Energy_kcal
+Energy in kilocalories (Integer)
+
+## Protein_g
+Protein in grams (Float)
+
+## Saturated_fats_g
+Saturated fats in grams (Float)
+
+## Fat_g
+Fat in grams (Float)
+
+## Carb_g
+Carbohydrates in grams (Float)
+
+## Fiber_g
+Fiber in grams (Float)
+
+## Sugar_g
+Sugar in grams (Float)
+
+## Calcium_mg
+Calcium in milligrams (Float)
+
+## Iron_mg
+Iron in milligrams (Float)
+
+## Magnesium_mg
+Magnesium in milligrams (Float)
+
+## Phosphorus_mg
+Phosphorus in milligrams (Float)
+
+## Potassium_mg
+Potassium in milligrams (Float)
+
+## Sodium_mg
+Sodium in milligrams (Float)
+
+## Zinc_mg
+Zinc in milligrams (Float)
+
+## Copper_mcg
+Copper in micrograms (Float)
+
+## Manganese_mg
+Manganese in milligrams (Float)
+
+## Selenium_mcg
+Selenium in micrograms (Float)
+
+## VitC_mg
+Vitamin C in milligrams (Float)
