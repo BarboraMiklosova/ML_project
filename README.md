@@ -14,6 +14,11 @@ This project provides an interactive exploratory data analysis of food ingredien
 - **Cross-filtering**: Select points in one chart to filter others
 - **Dynamic Filters**: Adjust protein and energy ranges, filter by category
 
+
+## Prerequisites
+- Python 3.x
+- A virtual environment with all packages from `requirements.txt` installed
+=======
 ## Requirements
 - Python 3.7+
 - Dependencies listed in `requirements.txt` (install with `pip install -r requirements.txt`)
@@ -38,6 +43,7 @@ This project provides an interactive exploratory data analysis of food ingredien
    ```bash
    pip install -r requirements.txt
    ```
+>>>>>>> 711c908eaf681e7424f649ac1b29433943697b28
 
 ## Running the Application
 1. Ensure the virtual environment is activated
@@ -72,10 +78,17 @@ This project provides an interactive exploratory data analysis of food ingredien
 - `app.py` - Main Dash application
 - `ingredients.csv` - Dataset
 - `requirements.txt` - Python dependencies
+<<<<<<< HEAD
+=======
 - `data_viz.ipynb` - Jupyter notebook with additional visualizations
 - `univariate_analysis.ipynb` - Univariate analysis notebook
+>>>>>>> 711c908eaf681e7424f649ac1b29433943697b28
 
 ## Notes
 - The CSV uses semicolons as delimiters: `pd.read_csv('ingredients.csv', sep=';')`
 - Some fields may contain missing values; the app handles data cleaning automatically
+<<<<<<< HEAD
+
+=======
 - For development, run with `python app.py` in debug mode (included by default)
+>>>>>>> 711c908eaf681e7424f649ac1b29433943697b28
