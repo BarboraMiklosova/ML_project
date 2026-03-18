@@ -17,15 +17,24 @@ import plotly.graph_objects as go
 # ============================================================================
 
 def load_and_clean_data():
-    """Load and clean ingredients dataset"""
-    df = pd.read_csv('ingredients.csv', sep=';', skiprows=1)
+    """Load and clean ingredients dataset with type safety"""
+    # 1. Load data - using engine='python' can be more stable with semicolon separators
+    df = pd.read_csv('ingredients.csv', sep=';', skiprows=1, engine='python')
     
-    # Columns to clean
+    # These are the columns causing the 'str' and 'str' error
     cols_to_clean = ['Energy_kcal', 'Protein_g', 'Fat_g', 'Carb_g', 'Sugar_g', 'Sodium_mg']
-    df_clean = df.copy()
     
-    # Remove negative values and extreme outliers (above 99th percentile)
+    # 2. Convert columns to numeric, turning errors (text) into NaN
     for col in cols_to_clean:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+    
+    # 3. Drop any rows that couldn't be converted to numbers
+    df = df.dropna(subset=cols_to_clean)
+    
+    # 4. Filter logic
+    df_clean = df.copy()
+    for col in cols_to_clean:
+        # Now quantile will work because the column is strictly float/int
         upper_limit = df[col].quantile(0.99)
         df_clean = df_clean[(df_clean[col] >= 0) & (df_clean[col] <= upper_limit)]
     
