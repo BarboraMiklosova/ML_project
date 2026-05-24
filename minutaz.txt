@@ -1,0 +1,15 @@
+main: 
+
+00:06 scree plot: 01.png
+
+cca 00:21 elbow plots: 02.png
+
+cca 00:32 silhouette score plot: 03.png
+
+cca 00:50 pc1 v pc2: 04.png
+
+cca 00:54: 6.png
+
+cca 01:27 7.png
+
+cca 01:40 8.png
