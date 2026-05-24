@@ -1,0 +1,15 @@
+# 1. Ignore absolutely everything in the folder by default
+*
+
+# 2. Allow directories to be seen (required for navigation)
+!*/
+
+# 3. Whitelist your processing notebook
+!spracovanie.ipynb
+
+# 4. Whitelist the readable data files
+!ingredients.csv
+!ingredients_corr.csv
+
+# 5. Whitelist this ignore file itself so the CLI can read the rules
+!.geminiignore
